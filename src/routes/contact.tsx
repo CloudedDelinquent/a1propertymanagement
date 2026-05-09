@@ -72,15 +72,15 @@ function ContactPage() {
               </a>
 
               <a
-                href="mailto:shanda4angle@gmail.com"
+                href="#contact-form"
                 className="flex items-center gap-4 p-4 bg-gray-50 rounded-xl hover:bg-orange-50 transition-colors group no-underline"
               >
                 <div className="w-12 h-12 bg-orange-500 rounded-xl flex items-center justify-center flex-shrink-0">
                   <Mail size={20} className="text-white" />
                 </div>
                 <div>
-                  <div className="text-xs text-gray-500 uppercase tracking-wider font-medium">Email Us</div>
-                  <div className="text-lg font-bold text-gray-900 group-hover:text-orange-600">shanda4angle@gmail.com</div>
+                  <div className="text-xs text-gray-500 uppercase tracking-wider font-medium">Message Us</div>
+                  <div className="text-lg font-bold text-gray-900 group-hover:text-orange-600">Use the contact form</div>
                 </div>
               </a>
 
@@ -126,7 +126,7 @@ function ContactPage() {
                 <p className="text-green-700 text-sm">We'll respond to your inquiry as soon as possible.</p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-5">
+              <form id="contact-form" onSubmit={handleSubmit} className="space-y-5">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
                     <label className="block text-sm font-semibold text-gray-700 mb-1">Name *</label>

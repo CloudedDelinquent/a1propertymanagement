@@ -61,7 +61,8 @@ export default async (req: Request, context: Context) => {
 
   // Send email via Resend
   const resendKey = Netlify.env.get('RESEND_API_KEY')
-  if (resendKey) {
+  const businessEmail = Netlify.env.get('CONTACT_EMAIL')
+  if (resendKey && businessEmail) {
     try {
       await fetch('https://api.resend.com/emails', {
         method: 'POST',
@@ -71,7 +72,7 @@ export default async (req: Request, context: Context) => {
         },
         body: JSON.stringify({
           from: 'A1 Property Management <onboarding@resend.dev>',
-          to: ['shanda4angle@gmail.com'],
+          to: [businessEmail],
           subject: `New Contact Message from ${data.name}`,
           html: `
             <h2>New Contact Form Submission</h2>

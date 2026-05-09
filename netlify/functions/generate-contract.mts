@@ -124,7 +124,7 @@ export default async (req: Request) => {
     '1. A1 Property Management Solutions will perform the agreed service on the scheduled date.',
     '2. Customer must provide safe access to the property on the scheduled date.',
     '3. Cancellations require a minimum of 48 hours notice. Late cancellations may incur a fee.',
-    '4. Rescheduling is available subject to crew availability. Contact Shanda Angle to reschedule.',
+    '4. Rescheduling is available subject to crew availability. Contact Michael Wilson to reschedule.',
     '5. Payment is due upon completion of services unless otherwise agreed in writing.',
     '6. A1 Property Management Solutions is not responsible for pre-existing property damage.',
     '7. All work is guaranteed. If you are not satisfied, contact us within 24 hours of completion.',
@@ -147,7 +147,7 @@ export default async (req: Request) => {
 
   // Footer
   page.drawRectangle({ x: 0, y: 0, width: 612, height: 30, color: dark })
-  page.drawText('A1 Property Management Solutions  |  shanda4angle@gmail.com  |  1-810-618-5093  |  Michigan, USA', {
+  page.drawText('A1 Property Management Solutions  |  1-810-618-5093  |  Michigan, USA', {
     x: 40,
     y: 10,
     size: 7.5,

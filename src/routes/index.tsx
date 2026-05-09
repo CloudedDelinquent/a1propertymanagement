@@ -26,7 +26,7 @@ const testimonials = [
   {
     name: 'Sandra K.',
     location: 'Saginaw, MI',
-    text: 'They handled our post-renovation cleanup perfectly. The place was spotless. Shanda was great at scheduling everything around our contractor.',
+    text: 'They handled our post-renovation cleanup perfectly. The place was spotless, and the team was great at scheduling everything around our contractor.',
     rating: 5,
   },
   {
@@ -163,10 +163,10 @@ function HomePage() {
                 initial: 'J',
               },
               {
-                name: 'Shanda Angle',
-                role: 'Logistics & Scheduling',
-                bio: 'Shanda manages all client coordination, scheduling, and logistics. Her attention to detail ensures every project runs on time and communication is seamless from start to finish.',
-                initial: 'S',
+                name: 'Michael Wilson',
+                role: 'Operations and Marketing Manager',
+                bio: 'Michael manages operations, client coordination, scheduling, and marketing. His attention to detail keeps projects running on time and communication clear from start to finish.',
+                initial: 'M',
               },
             ].map((member) => (
               <div key={member.name} className="bg-white rounded-xl border border-gray-200 p-8 text-center shadow-sm">

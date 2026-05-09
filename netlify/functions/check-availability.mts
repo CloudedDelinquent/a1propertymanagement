@@ -82,7 +82,8 @@ export default async (req: Request, context: Context) => {
 
   // Send confirmation email
   const resendKey = Netlify.env.get('RESEND_API_KEY')
-  if (resendKey) {
+  const businessEmail = Netlify.env.get('CONTACT_EMAIL')
+  if (resendKey && businessEmail) {
     try {
       // Email to business
       await fetch('https://api.resend.com/emails', {
@@ -93,7 +94,7 @@ export default async (req: Request, context: Context) => {
         },
         body: JSON.stringify({
           from: 'A1 Property Management <onboarding@resend.dev>',
-          to: ['shanda4angle@gmail.com'],
+          to: [businessEmail],
           subject: `New Booking: ${data.service} on ${data.date} — ${data.name}`,
           html: `
             <h2>New Booking Confirmed</h2>
@@ -127,8 +128,8 @@ export default async (req: Request, context: Context) => {
               <tr><td><strong>Date:</strong></td><td>${data.date}</td></tr>
               <tr><td><strong>Booking ID:</strong></td><td>${bookingId}</td></tr>
             </table>
-            <p>If you need to reschedule or have questions, contact us at shanda4angle@gmail.com or call 1-810-618-5093.</p>
-            <p>— Jay & Shanda, A1 Property Management Solutions</p>
+            <p>If you need to reschedule or have questions, call 1-810-618-5093.</p>
+            <p>— Jay & Michael, A1 Property Management Solutions</p>
           `,
         }),
       })

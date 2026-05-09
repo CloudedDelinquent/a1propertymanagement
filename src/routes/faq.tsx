@@ -60,7 +60,7 @@ const faqs = [
   },
   {
     q: 'What if I need to reschedule or cancel?',
-    a: 'We ask for at least 48 hours notice for rescheduling or cancellations. Contact Shanda directly at shanda4angle@gmail.com or call 1-810-618-5093.',
+    a: 'We ask for at least 48 hours notice for rescheduling or cancellations. Contact Michael Wilson directly or call 1-810-618-5093.',
   },
 ]
 

@@ -1,5 +1,5 @@
 import { Link } from '@tanstack/react-router'
-import { Phone, Mail, MapPin } from 'lucide-react'
+import { Phone, MapPin } from 'lucide-react'
 
 export function Footer() {
   return (
@@ -73,15 +73,7 @@ export function Footer() {
                   1-810-618-5093
                 </a>
               </li>
-              <li>
-                <a
-                  href="mailto:shanda4angle@gmail.com"
-                  className="flex items-center gap-2 hover:text-orange-400 transition-colors"
-                >
-                  <Mail size={14} className="text-orange-500 flex-shrink-0" />
-                  shanda4angle@gmail.com
-                </a>
-              </li>
+              <li>Use the contact form for messages and quote requests.</li>
               <li className="flex items-start gap-2">
                 <MapPin size={14} className="text-orange-500 flex-shrink-0 mt-0.5" />
                 <span>Michigan, USA</span>
@@ -95,7 +87,7 @@ export function Footer() {
           <p>
             Owned by{' '}
             <span className="text-gray-400">Jay Warner</span> &amp;{' '}
-            <span className="text-gray-400">Shanda Angle</span>
+            <span className="text-gray-400">Michael Wilson</span>
           </p>
         </div>
       </div>

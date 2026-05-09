@@ -78,7 +78,7 @@ function QuotePage() {
           </div>
           <h1 className="text-3xl font-black text-gray-900 mb-3">Quote Request Received!</h1>
           <p className="text-gray-500 mb-6">
-            Thank you! Shanda or Jay will review your project and get back to you within 24 hours at the email or phone you provided.
+            Thank you! Michael or Jay will review your project and get back to you within 24 hours at the email or phone you provided.
           </p>
           <a href="/" className="btn-primary inline-flex">Back to Home</a>
         </div>

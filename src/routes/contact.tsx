@@ -72,15 +72,15 @@ function ContactPage() {
               </a>
 
               <a
-                href="#contact-form"
+                href="mailto:warnerbrothersinc@icloud.com"
                 className="flex items-center gap-4 p-4 bg-gray-50 rounded-xl hover:bg-orange-50 transition-colors group no-underline"
               >
                 <div className="w-12 h-12 bg-orange-500 rounded-xl flex items-center justify-center flex-shrink-0">
                   <Mail size={20} className="text-white" />
                 </div>
                 <div>
-                  <div className="text-xs text-gray-500 uppercase tracking-wider font-medium">Message Us</div>
-                  <div className="text-lg font-bold text-gray-900 group-hover:text-orange-600">Use the contact form</div>
+                  <div className="text-xs text-gray-500 uppercase tracking-wider font-medium">Email Us</div>
+                  <div className="text-lg font-bold text-gray-900 group-hover:text-orange-600">warnerbrothersinc@icloud.com</div>
                 </div>
               </a>
 
